@@ -30,10 +30,27 @@ a:hover {
 .logo a:hover {
   text-decoration: none;
 }
-.menu li {
+  .menu li {
   font-size: 16px;
   padding: 15px 5px;
   white-space: nowrap;
+}
+.logo-a{
+    display: block;
+    font-family: monospace;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+
+    animation: typing 3s steps(18), blink .5s infinite;
+}
+
+@keyframes typing{
+    from {width: 0}
+}
+
+@keyframes blink{
+    50% { border-color: transparent}
 }
 .logo a,
 .toggle a {
